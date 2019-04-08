@@ -4,7 +4,9 @@ body {
     font-family: "LL Circular", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     min-width: 350px;
 }
-
+a {
+    display: block;
+}
 
 /*navigation*/
 .navigation {
@@ -236,6 +238,12 @@ body {
     text-decoration: none;
     border-bottom: 2px solid rgb(20, 43, 111);
     padding-bottom: 2px;
+}
+.featured_area_content a {
+    width: 210px;
+}
+.article_area_content a {
+    width: 165px;
 }
 .featured_area_content a:hover,
 .article_area_content a:hover {
@@ -520,6 +528,9 @@ body {
 .press_icon_1 {
     margin: 0px 43px; 
 }
+.press_icon_1 a {
+    display: block; 
+}
 .press_icon_1:hover {
     opacity: 0.6;
     transition: all ease 0.4s;
@@ -793,6 +804,9 @@ footer {
     margin: 25px 32px 20px 0px;
     transition: opacity 200ms ease-in-out 0s;
 }
+.social a {
+    display: block;
+}
 .social:hover {
     opacity: 0.6;
 }
@@ -858,10 +872,13 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     font-size: 0.8em;
+    width: 40%;
 }
 .authorship_privacy p {
     line-height: 0px;
     margin-right: 5px;
+    display: flex;
+    justify-content: flex-start;
 }
 .authorship_privacy a {
     text-decoration: none;
@@ -1061,6 +1078,12 @@ footer {
     .featured_area_content a,
     .article_area_content a {
         font-size: 1em;
+    }
+    .featured_area_content a {
+        width: 190px;
+    }
+    .article_area_content a {
+        width: 155px;
     }
     .delivered_area_content {
         padding: 20px 0% 0px 10%;
@@ -1550,6 +1573,9 @@ footer {
         width: 50%;
 
     }
+    .authorship_privacy {
+        width: 100%;
+    }
 }
 @media screen and (max-width:500px){
     .hover_menu {
@@ -1569,6 +1595,37 @@ footer {
     }
     .networks_headline h2 {
         width: 50%;
+    }
+}
+@media screen and (max-width:430px){
+    .hover_menu {
+        margin-left: 30%;
+    }
+    .testimonials_button button {
+        width: 90px;
+        height: 30px;
+        margin: 5px 11px 5px;
+        padding: 0px;
+    }
+    .instagram_button button {
+        width: 100px;
+        height: 50px;
+        margin: 20px 11px 15px;
+        padding: 0px;
+    }
+    .social {
+        margin: 25px 22px 20px 0px;
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+    }
+    .social a {
+        width: 35px;
+        height: 35px;
+    }
+    .social a svg {
+        width: 30px;
+        height: 30px;
     }
 }
 @media screen and (max-width:415px){
@@ -1609,11 +1666,6 @@ footer {
     .caption_intialiasing {
         width: 140px;
         height: 140px;
-    }
-}
-@media screen and (max-width:430px){
-    .hover_menu {
-        margin-left: 30%;
     }
 }
 @media screen and (max-width:400px){

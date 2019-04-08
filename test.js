@@ -1,4 +1,4 @@
-document.getElementById('slider-left').onclick = sliderLeft;
+document.getElementById('testimonials_slider-left').onclick = sliderLeft;
 var left = 396;
 
 function sliderLeft() {
@@ -6,11 +6,11 @@ function sliderLeft() {
     if (left < -2772){
         left = 0;
     }
-    var horizontal = document.getElementById('horizontal');
+    var horizontal = document.getElementById('testimonials_horizontal');
     horizontal.style.left = left+'px';
 }
 
-document.getElementById('slider-right').onclick = sliderRight;
+document.getElementById('testimonials_slider-right').onclick = sliderRight;
 var right = -3168;
 
 function sliderRight() {
@@ -18,6 +18,6 @@ function sliderRight() {
     if (right > 0){
         right = -2772;
     }
-    var horizontal = document.getElementById('horizontal');
+    var horizontal = document.getElementById('testimonials_horizontal');
     horizontal.style.left = right+'px';
 }
